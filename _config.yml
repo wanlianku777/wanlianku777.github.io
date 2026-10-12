@@ -1,0 +1,41 @@
+title: 万联库商机资源最新资讯
+description: 聚焦商机发现、资源对接与渠道合作。阅读万联库的实用指南与最新资讯，从信息中找到下一次合作的方向。
+url: https://wanlianku777.github.io
+baseurl: ""
+lang: zh-CN
+timezone: Asia/Shanghai
+permalink: /articles/:title/
+markdown: kramdown
+highlighter: rouge
+plugins:
+  - jekyll-sitemap
+  - jekyll-feed
+feed:
+  path: feed.xml
+future: false
+show_drafts: false
+defaults:
+  - scope:
+      path: ""
+    values:
+      layout: default
+  - scope:
+      path: ""
+      type: posts
+    values:
+      article: true
+      author: 万联库编辑部
+      author_url: /about/
+exclude:
+  - README.md
+  - PUBLISHING.md
+  - AGENTS.md
+  - article-template.md
+  - Gemfile
+  - Gemfile.lock
+  - vendor
+  - scripts
+  - .gitignore
+  - preview
+  - evidence
+  - delivery.json

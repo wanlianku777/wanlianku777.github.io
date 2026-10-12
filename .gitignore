@@ -1,0 +1,10 @@
+_site/
+.jekyll-cache/
+.sass-cache/
+.bundle/
+vendor/
+preview/
+evidence/
+delivery.json
+.env
+.env.*

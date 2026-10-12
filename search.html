@@ -1,0 +1,11 @@
+---
+title: 搜索文章
+description: 在万联库商机资源最新资讯中搜索商机、渠道与资源合作文章。
+permalink: /search/
+noindex: true
+sitemap: false
+---
+<header class="page-heading"><span class="eyebrow">找到你需要的信息</span><h1>今天，你想了解什么？</h1><p>搜索标题、摘要与正文，继续你的阅读。</p></header>
+<form id="search-form" class="search-form" role="search"><label class="visually-hidden" for="query">文章关键词</label><input id="query" name="q" type="search" placeholder="试试：资源、渠道、合作…" maxlength="100" autocomplete="off"><button class="button" type="submit">搜索</button></form>
+<div class="search-area"><p class="search-info" id="search-status" role="status" aria-live="polite"></p><div id="search-results"></div><noscript><p>搜索需要启用 JavaScript。你可以直接浏览<a href="{{ '/archive/' | relative_url }}">全部文章</a>或<a href="{{ '/topics/' | relative_url }}">专题导航</a>。</p></noscript></div>
+<script type="application/json" id="search-data">[{% for post in site.posts %}{"title":{{ post.title | jsonify }},"description":{{ post.description | jsonify }},"category":{{ post.category | default: '站点动态' | jsonify }},"date":{{ post.date | date: '%Y.%m.%d' | jsonify }},"url":{{ post.url | relative_url | jsonify }},"content":{{ post.content | strip_html | normalize_whitespace | jsonify | replace: '<', '\u003c' }}}{% unless forloop.last %},{% endunless %}{% endfor %}]</script>
