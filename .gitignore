@@ -8,3 +8,6 @@ evidence/
 delivery.json
 .env
 .env.*
+AGENTS.md
+PUBLISHING.md
+article-template.md

@@ -29,7 +29,7 @@ document.addEventListener('DOMContentLoaded', () => {
       document.querySelectorAll('[data-post-category]').forEach(row => { row.hidden = !!category && row.dataset.postCategory !== category; if (!row.hidden) count++; });
       filters.querySelectorAll('a').forEach(a => { const active = (new URL(a.href).searchParams.get('category') || '') === category; a.classList.toggle('active', active); if (active) a.setAttribute('aria-current','true'); else a.removeAttribute('aria-current'); });
       const empty = document.querySelector('#archive-empty'); empty.hidden = count > 0;
-      empty.textContent = category ? '这个专题还没有发布文章。可以选择其他专题，或前往官网查看实时商机。' : '文章正在准备，欢迎稍后再来阅读。';
+      empty.textContent = category ? '暂无匹配文章，可浏览其他专题。' : '暂无匹配文章，可浏览专题导航。';
     };
     filters.addEventListener('click', e => { const a=e.target.closest('a'); if(!a || e.ctrlKey || e.metaKey || e.shiftKey || e.altKey)return; e.preventDefault(); history.pushState(null,'',a.href);applyFilter(); });
     window.addEventListener('popstate',applyFilter);applyFilter();

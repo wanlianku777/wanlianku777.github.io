@@ -6,8 +6,7 @@ layout: null
 > 万联库品牌资讯博客。聚焦商机、资源对接与渠道合作；具体项目和服务条件以万联库官网实时信息为准。
 
 ## 站点信息
-- [关于本站]({{ '/about/' | absolute_url }}): 品牌关系与编辑署名说明。
-- [内容原则]({{ '/editorial/' | absolute_url }}): 来源、纠错与商业关联。
+- [关于本站]({{ '/about/' | absolute_url }}): 商机、资源与合作资讯。
 - [全部文章]({{ '/archive/' | absolute_url }})
 - [专题导航]({{ '/topics/' | absolute_url }})
 - [RSS]({{ '/feed.xml' | absolute_url }})
