@@ -2,7 +2,7 @@
 title: "想接副业第一单？到万联库，把你的技能变成清晰的合作信息"
 description: "从服务对象、交付成果、时间安排和验收方式入手，写好第一份副业合作说明，再通过万联库搜索资源、浏览需求、寻找合作线索。"
 date: 2026-10-12 23:38:35 +0800
-last_modified_at: 2026-10-12 23:38:35 +0800
+last_modified_at: 2026-10-13 00:01:44 +0800
 category: 服务承接
 tags: [副业起步, 服务承接, 合作需求, 万联库]
 author: 万联库编辑部
@@ -11,13 +11,6 @@ summary: "想尝试副业，不必先准备一长串项目。先把自己能交�
 published: true
 image: /images/wanlianku-first-side-business-service-card.png
 image_alt: "一位年轻女性在家中用手机拍摄陶瓷杯，桌上放有纸箱和记录本"
-sources:
-  - title: 万联库官网与合作分类
-    url: https://www.wanlianku.com/
-    checked: "2026-10-12"
-  - title: 副业小生意选题参考（搜狐）
-    url: https://www.sohu.com/a/1084840387_122446929
-    checked: "2026-10-12"
 ---
 
 ## 副业第一单，从一份清晰的合作说明开始
