@@ -11,7 +11,8 @@
 <meta property="og:type" content="{% if page.article %}article{% else %}website{% endif %}"><meta property="og:url" content="{{ page.url | absolute_url }}">
 {% if page.image %}<meta property="og:image" content="{{ page.image | absolute_url }}">{% endif %}
 <meta name="twitter:card" content="{% if page.image %}summary_large_image{% else %}summary{% endif %}">
-<link rel="icon" href="{{ '/favicon.svg' | relative_url }}" type="image/svg+xml">
+<link rel="icon" href="{{ '/wanlianku-logo.jpg' | relative_url }}" type="image/jpeg">
+<link rel="apple-touch-icon" href="{{ '/wanlianku-logo.jpg' | relative_url }}">
 <link rel="alternate" type="application/atom+xml" title="{{ site.title | escape }}" href="{{ '/feed.xml' | absolute_url }}">
 <link rel="stylesheet" href="{{ '/style.css' | relative_url }}"><script src="{{ '/site.js' | relative_url }}" defer></script>
 <script type="application/ld+json">{"@context":"https://schema.org","@type":"WebSite","@id":{{ '/#website' | absolute_url | jsonify }},"name":{{ site.title | jsonify }},"url":{{ '/' | absolute_url | jsonify }},"inLanguage":"zh-CN","publisher":{"@type":"Organization","name":"万联库","url":"https://www.wanlianku.com/"}}</script>
@@ -22,7 +23,7 @@
 {% endif %}
 </head>
 <body><a class="skip" href="#main">跳转到正文</a><div class="reading-progress" aria-hidden="true"></div>
-<header class="site-header"><div class="header-inner"><a class="brand" href="{{ '/' | relative_url }}" aria-label="万联库商机资源最新资讯首页"><span class="brand-mark" aria-hidden="true">万</span><span><strong>万联库</strong><small>商机资源最新资讯</small></span></a><nav aria-label="主导航"><a href="{{ '/' | relative_url }}" {% if page.home %}aria-current="page"{% endif %}>首页</a><a href="{{ '/archive/' | relative_url }}" {% if page.url == '/archive/' %}aria-current="page"{% endif %}>全部文章</a><a href="{{ '/topics/' | relative_url }}" {% if page.url == '/topics/' %}aria-current="page"{% endif %}>专题导航</a><a href="{{ '/about/' | relative_url }}">关于本站</a></nav><div class="header-actions"><a class="search-link" href="{{ '/search/' | relative_url }}" aria-label="搜索文章">⌕ <span>搜索</span></a><a class="button small official-link" data-location="header" href="https://www.wanlianku.com/?utm_source=wanlianku_blog&amp;utm_medium=referral&amp;utm_campaign=header">进入万联库 <span aria-hidden="true">↗</span></a></div></div></header>
+<header class="site-header"><div class="header-inner"><a class="brand" href="{{ '/' | relative_url }}" aria-label="万联库商机资源最新资讯首页"><img class="brand-logo" src="{{ '/wanlianku-logo.jpg' | relative_url }}" alt="资源商机 万联库" width="52" height="52"><span><strong>万联库</strong><small>商机资源最新资讯</small></span></a><nav aria-label="主导航"><a href="{{ '/' | relative_url }}" {% if page.home %}aria-current="page"{% endif %}>首页</a><a href="{{ '/archive/' | relative_url }}" {% if page.url == '/archive/' %}aria-current="page"{% endif %}>全部文章</a><a href="{{ '/topics/' | relative_url }}" {% if page.url == '/topics/' %}aria-current="page"{% endif %}>专题导航</a><a href="{{ '/about/' | relative_url }}">关于本站</a></nav><div class="header-actions"><a class="search-link" href="{{ '/search/' | relative_url }}" aria-label="搜索文章">⌕ <span>搜索</span></a><a class="button small official-link" data-location="header" href="https://www.wanlianku.com/?utm_source=wanlianku_blog&amp;utm_medium=referral&amp;utm_campaign=header">进入万联库 <span aria-hidden="true">↗</span></a></div></div></header>
 <main id="main" class="shell">
 {% if page.article %}
 <div class="breadcrumbs"><a href="{{ '/' | relative_url }}">首页</a><span>/</span><a href="{{ '/archive/' | relative_url }}">全部文章</a><span>/</span>{{ page.category | default: '站点动态' }}</div>
